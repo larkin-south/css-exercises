@@ -3,7 +3,7 @@ you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
 body {
-  margin: 0;
+  margin: 0px;
   background: #eee;
   font-family: Besley, serif;
 }
@@ -12,6 +12,14 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+  margin-left: auto;
 }
 
 .profile-image {
@@ -43,6 +51,14 @@ a {
   color: rebeccapurple;
 }
 
+.logo, ul, .account {
+  gap: 16px;
+  padding: 8px;
+}
+
 ul {
   list-style-type: none;
+  display: flex;
 }
+
+/* I should have added another <div> to capture the left side of the menu. That would've made it easier to configure the rest of the properties. */
