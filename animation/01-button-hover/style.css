@@ -16,4 +16,15 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  animation-duration: 1s;
+  animation-name: button-shrink;
+  animation-fill-mode: both;
+}
+
+button {
+  transition: transform .3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
